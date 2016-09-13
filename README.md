@@ -7,7 +7,7 @@ This is an electron boilerplate with the following technologies baked in:
 - Angular Material
 - Sass
 - Gulp
-- @srakowski 's ElectronLikeVS template
+- Modification of @srakowski 's ElectronLikeVS template
 
 
 ## Setup
