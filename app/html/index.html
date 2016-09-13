@@ -1,0 +1,53 @@
+<html>
+<head>
+    <!-- TODO: Include these in files -->
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+    <!-- Include JS -->
+    <script src="../js/index.js"></script>
+    <script src="../js/renderer.js"></script>
+    <script src="../js/electronlikevs.js"></script>
+
+    <!-- Include CSS -->
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/electronlikevs.css"/>
+</head>
+<body ng-app="BoilerplateApp" ng-controller="bpCtrl">
+    <div id="title-bar">
+        <div id="title">Electron Boilerplate</div>
+        <div id="title-bar-btns">
+            <button id="min-btn">-</button>
+            <button id="max-btn">+</button>
+            <button id="close-btn">x</button>
+        </div>
+    </div>
+    <div id="content">
+
+        <!-- Your HTML content here -->
+
+        <h1>Electron Boilerplate</h1>
+        <h4>Brought to you by <a href="https://www.github.com/hawkins">@hawkins</a></h4>
+
+        <hr/>
+
+        <h4>This boilerplate is built with the following technologies in mind:</h4>
+        <ul>
+            <li ng-repeat="tech in technologies"><a href="{{tech.link}}">{{tech.name}}</a></li>
+        </ul>
+    </div>
+
+
+    <div id="footer">
+        {{status}}
+    </div>
+</body>
+</html>

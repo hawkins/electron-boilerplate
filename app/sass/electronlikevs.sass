@@ -1,0 +1,74 @@
+@import colors
+
+html
+    margin: 0px
+    padding: 0px
+
+
+body
+    padding: 0px
+    margin: 0px
+    border: 1px solid $purple
+    position: absolute
+    top: 0px
+    left: 0px
+    right: 0px
+    bottom: 0px
+    min-height: calc(100% - 2px)
+    height: calc(100% - 2px)
+
+
+#title-bar
+    -webkit-app-region: drag
+    background-color: $titlebarbg
+    height: 32px
+    padding: 0px
+    margin: 0px
+    color: $titlebartextc
+    font-family: sans-serif
+
+
+#title
+    position: fixed
+    top: 0px
+    left: 12px
+    line-height: 32px
+    font-size: 14px
+
+
+#title-bar-btns
+    -webkit-app-region: no-drag
+    position: fixed
+    top: 1px
+    right: 0px
+
+
+#title-bar-btns button
+    height: 32px
+    width: 32px
+    background-color: transparent
+    border: none
+    color: $titlebarbtnc
+    font-size: 16px
+
+
+#title-bar-btns button:hover
+    background-color: $titlebarbtnbghover
+
+
+#content
+    padding: 12px
+
+
+a
+    color: $purple
+
+
+#footer
+    position: absolute
+    bottom: 0
+    height: 24px
+    width: calc(100% - 8px)
+    padding: 4px 4px 0 4px
+    background-color: $purple
+    color: $footertextc
